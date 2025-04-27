@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            background: url("images/8.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.fieldset {
+    border: 1px black; /* Adds a border for visibility */
+    padding: 20px;
+    border-radius: 0px;
+    background: #f1eeeec4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    margin: auto;
+    text-align: center;
+    flex-direction:row;
+    align-items: center; /* Center inputs inside */
+    justify-content: center;
+    text-align: center;
+    margin-left:200 px;
+    display: block;
+}
+#box {
+    position: absolute;  /* Full page coverage */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background: white; /* Keep background white */
+    border-radius: 0; /* Remove border-radius for full coverage */
+    overflow: hidden; /* Prevent overflow */
+    z-index: 1; /* Ensure it's above the background */
+    display: flex; /* Use flexbox to align left and right */
+}
+
+.left {
+    background: #ffffff;;
+    height: 100vh; /* Full height */
+    width: 34%; /* 34% of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 0px;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    float: left;
+}
+
+.right {
+    background: white;
+    height: 100vh; /* Full height */
+    width: 64%; /* 64% of the screen */
+    border-radius: 0px;
+    float: right;
+}
+
+        
+
+
+
+.txt {
+    height: 36px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e6e3ee;
+    background-color: rgba(219, 221, 228, 0.822);
+    box-shadow: 0px 0px 8px 3px rgba(205, 203, 211, 0.897);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    height: 45px;
+    width: 240px;
+    border-radius: 40px;
+    border: none;
+    background: rgb(61, 58, 73);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.fm { 
+    padding-left: 20px;
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+     .left p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 25px;
+            color: black;
+            letter-spacing: 2px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            display: block;
+            white-space: nowrap;
+            margin-left: 75px;
+            margin-top: 130px;
+        }
+       
+        h2 {
+            text-align: bottom;
+            font-size: 40px;
+            background: rgb(240, 239, 239);
+            color:rgb(58, 58, 119);
+            font-family: Felix Titling;
+        }
+        .checkname
+        {
+            text-align: bottom;
+            font-size: 40px;
+            background: rgb(0, 0, 0);
+            color:rgb(58, 58, 119);
+            font-family: Felix Titling;
+
+        }
+        h3 {
+            font-size: 27px;
+            text-align: center;
+            background: gold;
+            width: 50%;
+            font-family: Felix Titling;
+            margin: 50px auto;
+        }
+        ul li {
+            color: white;
+            font-size: 25px;
+            font-family: Arial Narrow;
+            text-align: center;
+            line-height: 39px;
+        }
+        pre {
+            color: white;
+            line-height: 310px;
+            margin-left: 10px;
+        }
+        .btn:hover {
+            background:rgba(123, 123, 128, 0.938);
+            height: 45px;
+            transition: all 2s;
+        }
+    .background 
+    {
+      width: 500px; /* Width of the element */
+      height: 685px; /* Height of the element */
+      background-image: url("framed-diploma-b-w-closeup-illustration-doctor-sitting-desk-his-hanging-wall-77218139-ezgif.com-webp-to-jpg-converter.jpg");
+      background-size: cover; /* Ensures the image covers the entire area */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position: center; /* Centers the image */
+    }
+    .logo {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    width: 100px; /* Adjust the size as needed */
+}
+    .back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    position:center;
+    object-fit: cover; /* Ensures video covers the entire div */
+    z-index: -1; /* Ensures the video stays behind the content */
+}
+#box > div {
+    position: relative;
+    z-index: 2; /* Content divs should be above the video */
+}
+.label-text {
+    color: rgb(68, 68, 121); /* Set font color */
+    font-size: 14px; /* Adjust the font size */
+    font-family:Felix Titling; /* Specify the font family */
+}
+.footer-container {
+    height: 100px;
+    background-color: #141038;  /* Dark Blue */
+    color: rgb(5, 4, 4);               /* White text for contrast */
+    text-align: center;         /* Center align text */
+    padding: 20px;              /* Add space around content */
+    width: 100%;                /* Full width */
+}
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container ul {
+    list-style: none;  /* Removes bullets */
+    padding: 0;        /* Removes default padding */
+}
+
+.footer-container li {
+    display: inline-block; /* Aligns items in a row */
+    margin-right: 15px;    /* Adds spacing between items */
+}
+
+    </style>
+</head>
+<body>
+    <p class="background"></p>
+    <div id="box">
+        <div class="left">
+            <p>Create Your Account</p>
+            <img class="logo" src="https://marketplace.canva.com/EAE8fLYOzrA/1/0/1600w/canva-health-care-bO8TgMWVszg.jpg" alt="Logo" width="150"></a>
+            <fieldset class="fieldset" data-hasrequired="* Required Fields">
+                <div class="field note">Please enter your details  below to create account.</div>    
+            <form class="fm" action="/register" method="POST">
+                <input type="text" placeholder="Username" class="txt" name="username" required/><br/>
+                <input type="email" placeholder="Email" class="txt" name="email" required/><br/>
+                <input type="password" placeholder="Password" class="txt" name="password" required/><br/>
+                <input type="checkbox" name="rm" class="checkname"/>
+                <label for="remember-me" class="label-text">Remember me?</label><br /><br />
+                <input type="submit" value="Create Account" class="btn"/>
+            </form>
+           </fieldset>
+        </div>
+        <div class="right">
+            <video autoplay loop muted plays-inline class="back-video">
+                <!--    <source src="0127.mp4" type="video/mp4">-->
+                    <source src="{{ url_for('static', filename='istockphoto-1491463133-640_adpp_is.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="wrapper-footer">
+        <div class="footer-container">
+            <div class="text-center">
+                <ul class="list-inline">
+                    <li>
+            
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li><a class="white-color" href="mailto:omersaif02@gmail.com">Contact us</a></li>
+                    <li>Healthcare 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+</body>
+</html>
